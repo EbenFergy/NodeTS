@@ -27,7 +27,7 @@ const App = () => {
 
     // Send a POST request
     await axios
-      .post('http://localhost:8080/auth/register', { ...credentials })
+      .post('http://localhost:8080/auth/login', { ...credentials })
       .then(res => {
         const { status, data } = res;
         status === 200 && console.log('response', data);
